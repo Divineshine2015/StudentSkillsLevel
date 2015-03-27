@@ -11,9 +11,9 @@ namespace StudentSkillsLevel
         List<Student> allStudents = new List<Student>();
 
 
-        internal static void Add(Student student)
+        internal void Add(Student student)
         {
-            throw new NotImplementedException();
+            allStudents.Add(student);
         }
     }
 }
