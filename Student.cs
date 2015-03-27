@@ -26,11 +26,11 @@ namespace StudentSkillsLevel
             
     
 
-            public Student (int currentPoints, int numOfPrograms,int numOfPeersHelp)
+            public Student (string studentName,int currentPoints, int numOfPrograms,int numOfPeersHelp)
             {
                 int peerToPoints=numOfPeersHelp*10;
                 CurrentPoints = currentPoints + numOfPrograms + peerToPoints;
-               
+                StudentName = studentName;
                 CalcStudentLevel();
                 CurrentLevel = CurrentLevelStatus.ToString();
             }

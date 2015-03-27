@@ -22,16 +22,18 @@ namespace StudentSkillsLevel
         {
             Console.WriteLine("Let's Assign your skills level !!");
             //input
+            Console.Write("Enter student name : ");
+            string studentName=Console.ReadLine();
             Console.Write("How many Programs did you complete?: ");
             int programPoints = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("How many Peers did you help today: ");
             int peerPoints = Convert.ToInt32(Console.ReadLine());
-            Student level = new Student(0, programPoints, peerPoints);
+
+            StudentCollection.Add(new Student(studentName, 0, programPoints, peerPoints));
+            Student level = new Student(studentName,0, programPoints, peerPoints);
             string Display = level.CurrentLevel;
             //Answers
-
-
-
+            
             Console.Write("You Helped: {0} ", peerPoints);
 
             Console.WriteLine("You achieved level: {0} ", Display );
