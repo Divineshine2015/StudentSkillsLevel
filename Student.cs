@@ -13,7 +13,7 @@ namespace StudentSkillsLevel
             public SkillsLevel CurrentLevelStatus
         {
             get { return currentLevelStatus; }
-            // set { bladeSharpness = value;  }
+           
         }
             private SkillsLevel currentLevelStatus;
             
@@ -30,21 +30,11 @@ namespace StudentSkillsLevel
             {
                 int peerToPoints=numOfPeersHelp*10;
                 CurrentPoints = currentPoints + numOfPrograms + peerToPoints;
-                //currentLevelStatus = SkillsLevel.Grasshopper;
-                //int currentLevelToPoints=(int) currentLevelStatus;
+               
                 CalcStudentLevel();
                 CurrentLevel = CurrentLevelStatus.ToString();
             }
-        //public void GetStudentNames()
-        //    {
-        //    StudentCollection newStudent= 
-
-
-        //    }
-
-
-
-   
+           
             public void CalcStudentLevel()
             {
                 int LevelPoints = CurrentPoints;
